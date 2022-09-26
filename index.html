@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="h11">
+      <h1>
+        <span class="title"><i class="fa-solid fa-list-check"></i></span>
+      </h1>
+      <div class="inputDiv">
+        <input type="text" class="input" placeholder="Enter" />
+        <button class="add"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div class="container"></div>
+    </div>
+
+    <div class="buttonContainer" align="center">
+      <a class="removeButton" onclick="removeAll()">Remove All</a>
+    </div>
+    <!-- JS -->
+    <script
+      src="https://kit.fontawesome.com/9ccae6bb7d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
