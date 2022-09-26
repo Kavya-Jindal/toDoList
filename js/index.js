@@ -15,7 +15,7 @@ class item{
         input.classList.add('itemInput')
         var remove=document.createElement('button')
         remove.classList.add('remove')
-        remove.innerHTML='<i class="fa-duotone fa-trash"></i>'
+        remove.innerHTML='<i class="fa-solid fa-xmark"></i>'
         remove.addEventListener('click',()=>this.remove(li))
         container.appendChild(li)
         li.appendChild(input)
