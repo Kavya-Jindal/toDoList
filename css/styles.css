@@ -1,11 +1,9 @@
 *{
-    
     box-sizing: border-box;
 }
 body{
     height: 100%;
     background-color: #FFE7BF;
-    box-sizing: border-box;
 }
 h1{
     text-align: center;
@@ -23,16 +21,13 @@ h1{
 }
 .input{
     padding: 0.5rem 1rem;
-    /* outline:none; */
     height: 50px;
     border-radius: 10px;
     width: 320px;
     margin: 0.40rem;
-    transition: 0.5s;
     font-size: 1.15rem;
 }
 .add{
-  
     border: none;
     border-radius: 10px;
     width: 50px;
@@ -40,7 +35,6 @@ h1{
     background-color: #FF869E;
     color:#FFE7BF;
     cursor: pointer;
-    transition:0.5s;
     margin: 0.25rem;
 }
 .add:hover{
@@ -56,7 +50,6 @@ h1{
 }
 .itemInput{
     background: #f3b8b8cc;
-  
     border: 3px solid #e99c9c;
     border-radius: 10px;
     padding: 10px;
@@ -67,9 +60,8 @@ h1{
 }
 .remove{
     background: none;
-  
     border: none;
-    color: #df6890c5;
+    color: #a10035;
     font-size: 2rem;
     margin-left: 30px;
     cursor: pointer;

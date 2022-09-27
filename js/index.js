@@ -1,39 +1,29 @@
 var container=document.querySelector('.container')
 var value1=document.querySelector('.input')
 var add1=document.querySelector('.add')
-class item{
-    constructor(name){
-        this.create(name)
-    }
-    create(name){
-        var li=document.createElement('div')
-        li.classList.add('item')
-        var input=document.createElement('input')
-        input.type="text"
-        input.disabled=true
-        input.value=name
-        input.classList.add('itemInput')
-        var remove=document.createElement('button')
-        remove.classList.add('remove')
-        remove.innerHTML='<i class="fa-solid fa-xmark"></i>'
-        remove.addEventListener('click',()=>this.remove(li))
-        container.appendChild(li)
-        li.appendChild(input)
-        li.appendChild(remove)
-    }
-    remove(li){
-        container.removeChild(li)
-    }
+function todo(){
+    var li=document.createElement('div')
+    var input=document.createElement('input')
+    input.type="text"
+    input.value=value1.value
+    input.classList.add('itemInput')
+    var remove=document.createElement('button')
+    remove.classList.add('remove')
+    remove.innerHTML='<i class="fa-solid fa-xmark"></i>'
+    li.append(remove)
+    remove.addEventListener('click',()=>li.remove())
+    container.appendChild(li)
+    li.appendChild(input)
 }
-add1.addEventListener('click',check)
+add1.addEventListener('click',plus)
 window.addEventListener('keydown',(e)=>{
     if(e.which==13){
-        check()
+        plus()
     }
 })
-function check(){
+function plus(){
     if(value1.value!=""){
-        new item(value1.value)
+        todo()
         value1.value=""
     }
 }
